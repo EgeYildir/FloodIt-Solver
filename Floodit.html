@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="Floodit.js"></script>
+  <link rel="stylesheet" href="Floodit.css">
+</head>
+<body>
+  <table>
+    <tr>
+      <td valign="top">
+        <table>
+          <tr>
+            <td valign="top">
+              <table id="button-table">
+                <tr>
+                  <td class="button blue" id="blue" onclick="flood ('blue')">
+                  </td>
+                  <td class="button red" id="red" onclick="flood ('red')">
+                  </td>
+                  <td class="button green" id="green" onclick="flood ('green')">
+                  </td>
+                </tr>
+                <tr>
+                  <td class="button yellow" id="yellow" onclick="flood ('yellow')">
+                  </td>
+                  <td class="button pink" id="pink" onclick="flood ('pink')">
+                  </td>
+                  <td class="button purple" id="purple" onclick="flood ('purple')">
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td id="turn-counter" valign="top">
+              Turn: <span id="moves"></span>/<span id="max-moves"></span>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td valign="top">
+              <input type="submit" value="New game" onclick="new_game ()">
+            </td>
+          </tr>
+          <tr valign="top">
+            <td valign="top">
+              <input type="submit" value="Help" onclick="help ()">
+            </td>
+          </tr>
+  
+          <tr valign="top">
+            <td valign="top">
+              <input type="submit" value="SolveGRD" onclick="solveGreedy ()">
+            </td>
+          </tr>
+
+          <tr valign="top">
+            <td valign="top">
+              <input type="submit" value="SolveGT" onclick="solveGameTree ()">
+            </td>
+          </tr>
+
+          <tr valign="top">
+            <td valign="top">
+              <input type="submit" value="SolveNV" onclick="solveNaive ()">
+            </td>
+          </tr>
+  
+        </table>
+      </td>
+      <td>
+        <table id="game-table">
+          <!-- Internet Explorer insists that this must be tbody.
+               See Dynamically created tables in Internet Explorer. -->
+          <tbody id="game-table-tbody">
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

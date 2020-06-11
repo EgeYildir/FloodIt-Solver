@@ -1,0 +1,42 @@
+.piece {
+    width: 28px;
+    height: 30px;
+    border:0px;
+}
+.button {
+    width: 25px;
+    height: 30px;
+    border:0px;
+    background-image:url(circle.gif);
+}
+.red {
+background-color: red;
+}
+.yellow {
+background-color: yellow;
+}
+.green {
+background-color: #0F0;
+}
+.blue {
+background-color: blue;
+}
+.purple {
+background-color: purple;
+}
+.pink {
+background-color: fuchsia;
+}
+#game-table {
+    margin:0px;
+    border:0px;
+    padding: 0px;
+    border-spacing:0px;
+}
+#button-table {
+    border-spacing:4px;
+    vertical-align: top;
+}
+#turn-counter {
+    font-family: sans-serif;
+}
